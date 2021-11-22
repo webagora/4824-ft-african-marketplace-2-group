@@ -58,3 +58,48 @@ The following tutorial explains how to set up this project using PostgreSQL and 
 - If you want to edit a migration that has already been released but don't want to lose all the data, make a new migration instead. This is a more realistic flow for production apps: prod databases are never migrated down. We can migrate Heroku down freely only because there's no valuable data from customers in it. In this sense, Heroku is acting more like a staging environment than production.
 
 - If your fronted devs are interested in running the API locally, help them set up PostgreSQL & pgAdmin in their machines, and teach them how to run migrations in their local. This empowers them to (1) help you troubleshoot bugs, (2) obtain the latest code by simply doing `git pull` and (3) work with their own data, without it being wiped every time you roll back the Heroku db. Collaboration is more fun and direct, and you don't need to deploy as often.
+
+### [POST] /api/auth/login
+
+- Login
+  - _username and password required_
+  - _provides a newly created token_
+
+_What you send:_
+
+```json
+{
+  "username": "Somebuyer",
+  "password": "password"
+}
+```
+
+_What you receive:_
+
+```json
+{
+  "message": "welcome, Somebuyer",
+  "role": "buer",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0Ijo1LCJ1c2VybmFtZSI6Ik5ld1VzZXIiLCJpYXQiOjE2MjcyNjY4MDYsImV4cCI6MTYyNzM1MzIwNn0.J1dFd3ghUPYVTodsaAU3Bg2RRcmYM_1oOe-96nvLLUg"
+}
+```
+
+_What you send:_
+
+```json
+{
+  "username": "SomeSeller",
+  "password": "password"
+}
+```
+
+_What you receive:_
+
+```json
+{
+  "message": "welcome, SomeSeller",
+  "role": "seller",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0Ijo1LCJ1c2VybmFtZSI6Ik5ld1VzZXIiLCJpYXQiOjE2MjcyNjY4MDYsImV4cCI6MTYyNzM1MzIwNn0.J1dFd3ghUPYVTodsaAU3Bg2RRcmYM_1oOe-96nvLLUg"
+}
+```
+

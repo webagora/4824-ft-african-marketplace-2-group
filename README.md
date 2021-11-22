@@ -46,5 +46,49 @@ In this project you'll choose an api to consume. You will build an application f
 
 Take the app as far as you can go! Styling, redux hooks, another API, an input to fetch data dynamically, etc. Work on it, improve it until the end of the day. If you find yourself finishing with time left to spare, jump on with your TL or fellow student to ask them what feature they think you should build next. Good luck!
 
-## Submission Format
-* [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
+## API 
+
+-   Base URL: `https://lbs-african-marketplace.herokuapp.com`
+
+### [POST] /auth/login
+
+- Login
+  - _username and password required_
+  - _provides a newly created token_
+
+_What you send:_
+
+```json
+{
+  "username": "somebuyer",
+  "password": "password"
+}
+```
+
+_What you receive:_
+
+```json
+{
+    "message": "Welcome somebuyer!",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoxNiwidXNlcm5hbWUiOiJzb21lYnV5ZXIiLCJkZXBhcnRtZW50IjoiYnV5ZXIiLCJpYXQiOjE2Mzc2MDg5NTksImV4cCI6MTYzNzYxMjU1OX0.uNZK8cMdLMYmtzvBB-aY9oIxT1g23MNLZp-c01xl24o"
+}
+```
+
+_What you send:_
+
+```json
+{
+  "username": "someseller",
+  "password": "password"
+}
+```
+
+_What you receive:_
+
+```json
+{
+    "message": "Welcome someseller!",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJqZWN0IjoxNywidXNlcm5hbWUiOiJzb21lc2VsbGVyIiwiZGVwYXJ0bWVudCI6InNlbGxlciIsImlhdCI6MTYzNzYwOTAwMywiZXhwIjoxNjM3NjEyNjAzfQ.R1dMzRhpLbwIWOb0FZCyNKLbXSK3fiQsOGgobR-MUOY"
+}
+```
+
