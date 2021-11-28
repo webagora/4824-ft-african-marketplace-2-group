@@ -1,50 +1,45 @@
-# Build week 3.4 - FT-African-Marketplace-2-Group
+#   ft-african-marketplace-2-group
 
-This project allows you to practice the concepts and techniques learned in this module and apply them in a concrete project. This module explored asyncronous action creators in Redux. In your project you will demonstrate proficiency of these subjects and principles by building an app from scratch that consumes and API of your choosing, and displays data fetched from that API.
+Hello Build Weeks team- welcome to your project channel!
 
-## Introduction
+-   Your team will be working on Anywhere Fitness
+-   You can check out the product canvas [here: ](https://www.notion.so/African-Marketplace-a449bf95188440b29436334e870c8f3e)
+-   books  If ya haven’t already, check out the [FT Build Weeks Student Guide: ](https://www.notion.so/lambdaschool/Build-Week-Student-Guide-Full-time-1995e4ff529e40db9f240f46c3d2afd3) -  This will cover anything you need for your Build Week.
 
-This is the chance to let your skills shine! You have learned _sooo_ much the last month, and now you get to put all of your hard-earned skills to work. Choose an open api ([this list](https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/) has a lot of great ones). Protip - don't take too long choosing an API. Pick one that looks interesting, and get building.
+##  Attention all Unit 2 web students:
 
-Once you have chosen an API to consume, build an app that makes sense for the data you will be retrieving. Have fun with this. You get to be the creative mind. You get to make all the decisions here. I'm excited to see what you build!
+-   If you have not already, please refer to the Build Week Orientation recording, which you can find [here:](https://youtu.be/_hMsnHkCf-0)  This covers everything you need to know about what we do in Build Week and you can get through it pretty quickly if ya watch at 1.5x!
+-   Please make sure that you and all Unit 2 team mates are in the main ```#bw_ft``` and ```#bw_help``` channels! I won’t be dropping any further announcements in your cohort channels and only in the ```#bw_ft``` channel from here on out.
+-   If you have any problems- missing team members I might not aware of or anything else: send me a DM directly. I will not see your message here, even if you “@” me. 
 
-**Read these instructions carefully. Understand exactly what is expected _before_ starting this project.**
+##  African marketplace
 
-### Commits
+###  Pitch 
 
-Commit your code regularly and meaningfully. This helps both you and your team lead in case you ever need to return to old code for any number of reasons.
+Sauti Africa empowers small business owners, particularly women, to improve their business and economic opportunities to grow out of poverty. 
 
-### Description
+You will build a platform to enable these business owners to create listing for items they have for sale. 
 
-In this project you'll choose an api to consume. You will build an application from scratch that uses your chosen API and displays the data you are getting from it.
+### MVP
 
-## Instructions
+1. A small business `owner` can login and see relevant prices in various categories to help them set their own prices.
 
-### Task 1: Project Set Up
+2. They can also make listing for `items` they want to sell, which will show up to all `users`.
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
-- [ ] Clone your OWN version of the repository in your terminal.
-- [ ] CD into the project base directory `cd React-Redux-App`.
-- [ ] Run `npx create-react-app app --use-npm` to make a CRA app.
-- [ ] CD into the react app `cd app`.
-- [ ] Start up the app using `npm start`.
-- [ ] Install `axios`, `redux-thunk` and `redux-logger`
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+3. They add a new `item` by selecting their market `location` and typing in their item's `name`, `description`, and `price`.
 
-### Task 2: Minimum Viable Product
+## 🏃‍♀️**Stretch**
 
-- [ ] Build a React Redux app
-- [ ] Fetch data inside an async action creator from an API of your choosing
-- [ ] Add the data from the API to the Redux store
-- [ ] Display the data from the store in a component
-- [ ] _Some_ styling must be applied. It can be basic, but the app must not only use browser default stylings
+1. A business owner can upload their picture to their profile.
 
-### Task 3: Stretch Problems
+## 📦 Additional Resources
 
-Take the app as far as you can go! Styling, redux hooks, another API, an input to fetch data dynamically, etc. Work on it, improve it until the end of the day. If you find yourself finishing with time left to spare, jump on with your TL or fellow student to ask them what feature they think you should build next. Good luck!
+**Proof of concept:**
+
+[http://sautiafrica.org/](http://sautiafrica.org/)
+
+**Example product reference list:** [https://docs.google.com/spreadsheets/d/1cbJQL1JbO5pAV4mss1yH0uMp58lF8TkKZt6NPkF9NLg/edit#gid=0](https://docs.google.com/spreadsheets/d/1cbJQL1JbO5pAV4mss1yH0uMp58lF8TkKZt6NPkF9NLg/edit#gid=0)
+
 
 ## API 
 
